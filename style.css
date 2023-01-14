@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Overpass:wght@400;800&family=Sen&display=swap");
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #c9ced34d;
+  margin: 0;
+  min-height: 100vh;
+  font-family: Sen, sans-serif;
+  letter-spacing: 2px;
+
+  /* Center */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: white;
+  height: 630px;
+  width: 480px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form {
+  width: 90%;
+}
+
+.form-group {
+  height: 65px;
+}
+
+.form-group label {
+  position: relative;
+  bottom: 3px;
+}
+
+input {
+  width: 100%;
+  height: 34px;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+  outline: none;
+  transition: all 0.3s;
+
+  /* Width 100% + 5padding of left and right, WITH BORDER-BOX WE PREVENT THAT !! */
+  box-sizing: border-box;
+}
+
+input:valid {
+  border: 1px solid green;
+}
+
+input:invalid {
+  border: 1px solid red;
+}
+
+button {
+  cursor: pointer;
+  color: white;
+  background-color: black;
+  border: none;
+  border-radius: 9px;
+  height: 50px;
+  width: 100%;
+  font-family: Sen, sans-serif;
+  font-size: 20px;
+  letter-spacing: 2px;
+  margin-top: 5px;
+  transition: all 0.3s;
+}
+
+button:hover {
+  filter: brightness(200%);
+  background-color: rgb(43, 42, 42);
+}
+
+button:focus {
+  outline: none;
+}
+
+.message-container {
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 90%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  color: black;
+}
